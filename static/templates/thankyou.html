@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class='col-sm-12' style='text-align:center'>
+        <h1>You are almost done. Just one more step.</h1>
+    </div>
+    <div class="col-md-3">
+          <h1>join now</h1>
+          <form method="POST" action="">{% csrf_token %}
+            {{form.as_p}}
+            
+            <input type="submit" class="btn btn-success btn btn-primary btn-lg btn-block">
+          </form>  
+        </div>
+{% endblock %}
